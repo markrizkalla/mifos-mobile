@@ -55,7 +55,6 @@ jobs:
           fi
 
       - name: Run translation autofill (Gemma)
-        working-directory: ./scripts/i18n
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
