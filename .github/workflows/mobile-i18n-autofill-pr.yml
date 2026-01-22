@@ -4,9 +4,9 @@ on:
   pull_request:
     branches: [development]
     paths:
-      - 'cmp-android/**'
-      - 'feature/**'
+      - 'feature/transfer-process/**'
       - 'translate.py'
+
 
 permissions:
   contents: write
@@ -67,7 +67,11 @@ jobs:
 
       # Fast validation – matches existing CI expectations
       - name: Validate Android resources compile
-        run: ./gradlew :cmp-android:processDebugResources
+        run: |
+          ./gradlew \
+            :cmp-android:processDemoDebugResources \
+            :cmp-android:processProdDebugResources
+      
 
       - name: Create Pull Request with translations
         uses: peter-evans/create-pull-request@v7
@@ -76,8 +80,7 @@ jobs:
           branch: bot/mobile-i18n-autofill
           delete-branch: true
           add-paths: |
-            cmp-android/**
-            feature/**
+            feature/transfer-process/**
 
           commit-message: "chore(i18n): autofill missing translations (ar)"
           title: "chore(i18n): autofill missing translations (ar)"
