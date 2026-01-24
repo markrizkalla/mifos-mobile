@@ -62,7 +62,7 @@ jobs:
         run: |
           python translate.py \
             --mode apply \
-            --locales ar,en \
+            --locales es,ar \
             --model gemma-3-27b-it \
             --batch-size 15 \
             --request-delay 2
