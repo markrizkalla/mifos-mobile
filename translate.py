@@ -1257,6 +1257,7 @@ def process_locale(
 
     translations: Dict[str, str] = {}
     items = [(e.key, frozen_map[e.key]) for e in missing_entries]
+
     batches = create_batches(items, config.batch_size)
 
     for batch_idx, batch in enumerate(batches, 1):

@@ -6,6 +6,7 @@ on:
     paths:
       - 'cmp-android/**'
       - 'feature/**'
+      - 'translate.py'
 
 
 permissions:
