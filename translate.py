@@ -671,6 +671,12 @@ def _create_from_source(
     for elem in elements_to_remove:
         _remove_element_preserve_whitespace(root, elem)
 
+    # Ensure xliff namespace is declared at root to prevent ns2 prefixes
+    _ensure_xliff_namespace_at_root(root)
+    
+    # Clean up redundant namespace declarations
+    ET.cleanup_namespaces(root)
+    
     # Write file
     tree = ET.ElementTree(root)
     tree.write(
@@ -679,6 +685,9 @@ def _create_from_source(
         xml_declaration=True,
         pretty_print=False,
     )
+    
+    # Post-process to fix xliff namespace issues
+    _fix_xliff_namespaces_in_file(target_xml)
 
     if validate:
         try:
@@ -687,6 +696,82 @@ def _create_from_source(
             raise XmlWriteError(f"Written file is malformed: {target_xml}: {e}")
 
     return written
+
+
+def _ensure_xliff_namespace_at_root(root: ET._Element) -> None:
+    """
+    Ensure the xliff namespace is declared at root level to prevent lxml
+    from generating auto-prefixed namespaces (ns2) when serializing.
+    
+    This fixes the Android resource compiler error:
+    CantBindXML?prefix="xmlns",localpart="ns2",rawname="xmlns:ns2"
+    """
+    # Add xliff namespace to root's nsmap if not present
+    # This needs to be done by recreating the root element since nsmap is read-only
+    if 'xliff' not in (root.nsmap or {}):
+        # Check if any descendants use xliff namespace
+        needs_xliff = False
+        for elem in root.iter():
+            if not isinstance(elem.tag, str):
+                continue
+            # Check for {namespace}tag format
+            if XLIFF_NAMESPACE in str(elem.tag):
+                needs_xliff = True
+                break
+            # Check for xliff: prefix in tag
+            if elem.tag.startswith('xliff:'):
+                needs_xliff = True
+                break
+        
+        if needs_xliff:
+            # Set the namespace declaration as an attribute
+            # This is a workaround since nsmap is read-only
+            root.set(f'{{http://www.w3.org/2000/xmlns/}}xliff', XLIFF_NAMESPACE)
+
+
+def _fix_xliff_namespaces_in_file(target_xml: Path) -> None:
+    """
+    Post-process the written XML file to fix namespace issues.
+    
+    - Replaces ns2: prefixes with xliff:
+    - Removes inline xmlns:ns2 declarations
+    - Ensures xliff namespace is declared at root level
+    """
+    content = target_xml.read_text(encoding='utf-8')
+    original_content = content
+    
+    # Pattern to match ns0, ns1, ns2, etc. prefixes used for xliff
+    # Replace <ns2:g with <xliff:g and </ns2:g> with </xliff:g>
+    import re
+    
+    # Find all ns# prefixes that might be used for xliff
+    ns_pattern = re.compile(r'xmlns:(ns\d+)="urn:oasis:names:tc:xliff:document:1\.2"')
+    ns_matches = ns_pattern.findall(content)
+    
+    for ns_prefix in set(ns_matches):
+        # Replace the prefix in tags
+        content = content.replace(f'<{ns_prefix}:', '<xliff:')
+        content = content.replace(f'</{ns_prefix}:', '</xliff:')
+        # Remove inline namespace declarations
+        content = re.sub(
+            rf'\s*xmlns:{ns_prefix}="urn:oasis:names:tc:xliff:document:1\.2"',
+            '',
+            content
+        )
+    
+    # Ensure xliff namespace is declared at root if xliff: tags are present
+    if 'xliff:' in content and 'xmlns:xliff=' not in content:
+        # Add xliff namespace declaration to the resources tag
+        content = content.replace(
+            '<resources',
+            '<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2"',
+            1
+        )
+    
+    # Only rewrite if changes were made
+    if content != original_content:
+        target_xml.write_text(content, encoding='utf-8')
+
 
 
 def _remove_element_preserve_whitespace(root: ET._Element, elem: ET._Element) -> None:
@@ -850,6 +935,12 @@ def _merge_into_existing(
                 break
 
     if written > 0:
+        # Ensure xliff namespace is declared at root to prevent ns2 prefixes
+        _ensure_xliff_namespace_at_root(existing_root)
+        
+        # Clean up redundant namespace declarations
+        ET.cleanup_namespaces(existing_root)
+        
         tree = ET.ElementTree(existing_root)
         tree.write(
             str(target_xml),
@@ -857,6 +948,9 @@ def _merge_into_existing(
             xml_declaration=True,
             pretty_print=False,
         )
+        
+        # Post-process to fix xliff namespace issues
+        _fix_xliff_namespaces_in_file(target_xml)
 
         if validate:
             try:
@@ -1310,6 +1404,7 @@ Examples:
   %(prog)s --mode apply --locales es,de,fr
   %(prog)s --mode apply --locales ar --model gemma-3-27b-it --batch-size 10
   %(prog)s --mode apply --locales es --request-delay 4.0 --batch-size 10
+   python translate.py --repo-root ./feature/transfer-process --mode apply --locales es,de,ar --model gemma-3-27b-it --batch-size 15
 
 Environment Variables:
   GEMINI_API_KEY    API key for Google Gemini (required for apply mode)

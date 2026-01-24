@@ -4,8 +4,8 @@ on:
   pull_request:
     branches: [development]
     paths:
-      - 'feature/transfer-process/**'
-      - 'translate.py'
+      - 'cmp-android/**'
+      - 'feature/**'
 
 
 permissions:
@@ -59,6 +59,7 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
           python translate.py \
+            --repo-root feature/transfer-process \
             --mode apply \
             --locales ar \
             --model gemma-3-27b-it \
@@ -80,7 +81,8 @@ jobs:
           branch: bot/mobile-i18n-autofill
           delete-branch: true
           add-paths: |
-            feature/transfer-process/**
+            - 'cmp-android/**'
+            - 'feature/**'
 
           commit-message: "chore(i18n): autofill missing translations (ar)"
           title: "chore(i18n): autofill missing translations (ar)"
