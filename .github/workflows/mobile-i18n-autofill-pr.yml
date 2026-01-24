@@ -81,8 +81,8 @@ jobs:
           branch: bot/mobile-i18n-autofill
           delete-branch: true
           add-paths: |
-            - 'cmp-android/**'
-            - 'feature/**'
+            cmp-android/**
+            feature/**
 
           commit-message: "chore(i18n): autofill missing translations (ar)"
           title: "chore(i18n): autofill missing translations (ar)"
