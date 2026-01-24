@@ -1225,6 +1225,7 @@ def process_locale(
     result = LocaleResult(locale=locale, source_path=source_xml, target_path=target_xml)
 
     source_entries = read_source_strings(source_xml)
+
     result.total_source = len(source_entries)
 
     if not source_entries:
