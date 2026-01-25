@@ -15,7 +15,7 @@ Features:
 - Whitespace preservation (no stripping of source text)
 - HTML entity conversion (case-insensitive)
 - Android special character escaping
-- xml:space="preserve" for significant whitespace
+- Proper xliff namespace handling for AAPT2 compatibility
 - Batch translation with individual fallback
 - Better 503/overload error handling
 - Comprehensive validation and error handling
@@ -68,7 +68,6 @@ XML_PARSER = ET.XMLParser(
     strip_cdata=False,
 )
 
-XML_NAMESPACE = "http://www.w3.org/XML/1998/namespace"
 XLIFF_NAMESPACE = "urn:oasis:names:tc:xliff:document:1.2"
 TOOLS_NAMESPACE = "http://schemas.android.com/tools"
 
@@ -194,11 +193,8 @@ class StringEntry:
     def is_formatted(self) -> bool:
         return self.attributes.get("formatted", "true").lower() != "false"
 
-    @property
-    def has_xml_space_preserve(self) -> bool:
-        return self.attributes.get(f"{{{XML_NAMESPACE}}}space") == "preserve"
-
     def get_propagated_attributes(self) -> Dict[str, str]:
+        """Get attributes to propagate to translation (name, formatted, product, tools:*)."""
         result = {"name": self.key}
         for attr in PROPAGATE_ATTRIBUTES:
             if attr in self.attributes:
@@ -206,9 +202,6 @@ class StringEntry:
         for key, value in self.attributes.items():
             if key.startswith(f"{{{TOOLS_NAMESPACE}}}") or key.startswith("tools:"):
                 result[key] = value
-        xml_space_key = f"{{{XML_NAMESPACE}}}space"
-        if xml_space_key in self.attributes:
-            result[xml_space_key] = self.attributes[xml_space_key]
         return result
 
 
@@ -463,8 +456,6 @@ def read_source_strings(source_xml: Path) -> List[StringEntry]:
                 continue
             if attr_key in PROPAGATE_ATTRIBUTES:
                 preserved[attr_key] = attr_val
-            elif attr_key == f"{{{XML_NAMESPACE}}}space":
-                preserved[attr_key] = attr_val
             elif attr_key.startswith(f"{{{TOOLS_NAMESPACE}}}"):
                 preserved[attr_key] = attr_val
         entries.append(StringEntry(key=name, text=raw_text, attributes=preserved))
@@ -655,12 +646,6 @@ def _create_from_source(
                 for child in list(string_elem):
                     string_elem.remove(child)
 
-                # Add xml:space="preserve" if needed
-                xml_space_key = f"{{{XML_NAMESPACE}}}space"
-                if xml_space_key not in string_elem.attrib:
-                    if value and (value[0].isspace() or value[-1].isspace()):
-                        string_elem.set(xml_space_key, "preserve")
-
                 set_mixed_string_value(string_elem, value, key=name, warn_unknown_tags=warn_unknown_tags)
                 written += 1
             else:
@@ -671,9 +656,6 @@ def _create_from_source(
     for elem in elements_to_remove:
         _remove_element_preserve_whitespace(root, elem)
 
-    # Ensure xliff namespace is declared at root to prevent ns2 prefixes
-    _ensure_xliff_namespace_at_root(root)
-    
     # Clean up redundant namespace declarations
     ET.cleanup_namespaces(root)
     
@@ -686,7 +668,7 @@ def _create_from_source(
         pretty_print=False,
     )
     
-    # Post-process to fix xliff namespace issues
+    # Post-process to fix any xliff namespace prefix issues (ns0, ns1 -> xliff)
     _fix_xliff_namespaces_in_file(target_xml)
 
     if validate:
@@ -698,50 +680,19 @@ def _create_from_source(
     return written
 
 
-def _ensure_xliff_namespace_at_root(root: ET._Element) -> None:
-    """
-    Ensure the xliff namespace is declared at root level to prevent lxml
-    from generating auto-prefixed namespaces (ns2) when serializing.
-    
-    This fixes the Android resource compiler error:
-    CantBindXML?prefix="xmlns",localpart="ns2",rawname="xmlns:ns2"
-    """
-    # Add xliff namespace to root's nsmap if not present
-    # This needs to be done by recreating the root element since nsmap is read-only
-    if 'xliff' not in (root.nsmap or {}):
-        # Check if any descendants use xliff namespace
-        needs_xliff = False
-        for elem in root.iter():
-            if not isinstance(elem.tag, str):
-                continue
-            # Check for {namespace}tag format
-            if XLIFF_NAMESPACE in str(elem.tag):
-                needs_xliff = True
-                break
-            # Check for xliff: prefix in tag
-            if elem.tag.startswith('xliff:'):
-                needs_xliff = True
-                break
-        
-        if needs_xliff:
-            # Set the namespace declaration as an attribute
-            # This is a workaround since nsmap is read-only
-            root.set(f'{{http://www.w3.org/2000/xmlns/}}xliff', XLIFF_NAMESPACE)
-
-
 def _fix_xliff_namespaces_in_file(target_xml: Path) -> None:
     """
-    Post-process the written XML file to fix namespace issues.
+    Post-process the written XML file to fix xliff namespace issues.
     
-    - Replaces ns2: prefixes with xliff:
-    - Removes inline xmlns:ns2 declarations
+    lxml may generate auto-prefixed namespaces (ns0, ns1, etc.) instead of
+    using the proper 'xliff' prefix. This function:
+    - Replaces ns#: prefixes with xliff: for XLIFF namespace
+    - Removes inline xmlns:ns# declarations for XLIFF
     - Ensures xliff namespace is declared at root level
     """
     content = target_xml.read_text(encoding='utf-8')
     original_content = content
     
-    # Pattern to match ns0, ns1, ns2, etc. prefixes used for xliff
-    # Replace <ns2:g with <xliff:g and </ns2:g> with </xliff:g>
     import re
     
     # Find all ns# prefixes that might be used for xliff
@@ -905,11 +856,6 @@ def _merge_into_existing(
         attrs = entry.get_propagated_attributes()
         node = ET.Element("string", **attrs)
 
-        xml_space_key = f"{{{XML_NAMESPACE}}}space"
-        if xml_space_key not in attrs:
-            if value and (value[0].isspace() or value[-1].isspace()):
-                node.set(xml_space_key, "preserve")
-
         set_mixed_string_value(node, value, key=key, warn_unknown_tags=warn_unknown_tags)
 
         # Set tail from source
@@ -935,9 +881,6 @@ def _merge_into_existing(
                 break
 
     if written > 0:
-        # Ensure xliff namespace is declared at root to prevent ns2 prefixes
-        _ensure_xliff_namespace_at_root(existing_root)
-        
         # Clean up redundant namespace declarations
         ET.cleanup_namespaces(existing_root)
         
@@ -949,7 +892,7 @@ def _merge_into_existing(
             pretty_print=False,
         )
         
-        # Post-process to fix xliff namespace issues
+        # Post-process to fix any xliff namespace prefix issues (ns0, ns1 -> xliff)
         _fix_xliff_namespaces_in_file(target_xml)
 
         if validate:
