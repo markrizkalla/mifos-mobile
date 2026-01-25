@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+    <string name="view_guarantor">Ver Garante</string>
+    <string name="add_guarantor">Añadir Garante</string>
+    <string name="delete_guarantor">Eliminar Garante</string>
+    <string name="update_guarantor">Actualizar Garante</string>
+    <string name="guarantor_type">Tipo de Garante</string>
+    <string name="no_guarantors">No hay Garantes</string>
+    <string name="tap_to_add_guarantor">Toca para Añadir Garante</string>
+    <string name="guarantor_details">Detalles del Garante</string>
+    <string name="screen_guarantor_list">Pantalla Lista de Garantes</string>
+    <string name="screen_guarantor_details">Pantalla Detalles del Garante</string>
+    <string name="screen_guarantor_add">Pantalla Añadir Garante</string>
+    <string name="city">Ciudad</string>
+    <string name="guarantor_deleted_successfully">Garante eliminado correctamente</string>
+    <string name="guarantor_created_successfully">Garante creado correctamente</string>
+    <string name="guarantor_updated_successfully">Garante actualizado correctamente</string>
+    <string name="error_validation_blank">%1$s no puede estar en blanco</string>
+    <string name="first_name">Nombre</string>
+    <string name="last_name">Apellido</string>
+    <string name="phone_number">Número de teléfono</string>
+    <string name="internet_not_connected">Por favor, activa tu wifi o datos móviles</string>
+    <string name="office_name">Nombre de la oficina</string>
+    <string name="submit">Enviar</string>
+    <string name="dialog_are_you_sure_that_you_want_to_string">¿Estás seguro de que quieres %1$s?</string>
+    <string name="yes">Sí</string>
+    <string name="dismiss">Descartar</string>
+</resources>

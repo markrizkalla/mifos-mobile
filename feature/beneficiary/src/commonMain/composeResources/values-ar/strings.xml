@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <!--
     Copyright 2026 Mifos Initiative
 
@@ -7,8 +7,7 @@
     You can obtain one at https://mozilla.org/MPL/2.0/.
 
     See https://github.com/openMF/mobile-mobile/blob/master/LICENSE.md
--->
-<resources>
+--><resources>
     <string name="error_fetching_beneficiaries">فشل في جلب المستفيدين</string>
     <string name="error_fetching_beneficiary_template">فشل في جلب قالب المستفيد</string>
     <string name="error_fetching_template">فشل في جلب القالب</string>
@@ -117,4 +116,7 @@
     <string name="type_of_account">نوع الحساب</string>
     <string name="selected_count">%1$d محدد</string>
     <string name="filter_icon_description">رمز التصفية</string>
+
+    <!-- Beneficiary Filter Types -->
+    <string name="feature_generic_error_server">حدث خطأ في الخادم من جانبنا، لا يمكن المتابعة، حاول مرة أخرى بعد لحظة</string>
 </resources>

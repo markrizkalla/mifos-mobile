@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <!--
     Copyright 2026 Mifos Initiative
 
@@ -7,8 +7,7 @@
     You can obtain one at https://mozilla.org/MPL/2.0/.
 
     See https://github.com/openMF/mobile-mobile/blob/master/LICENSE.md
--->
-<resources>
+--><resources>
     <string name="change_app_theme">تغيير السمة</string>
     <string name="settings">الإعدادات</string>
     <string name="change_passcode">تغيير رمز المرور</string>
@@ -49,6 +48,9 @@
     <string name="feature_settings_action_about_us">معلومات عنا</string>
     <string name="feature_settings_action_about_us_tip">تعرف على المزيد حول مبادرتنا</string>
 
+    <string name="feature_settings_action_rate_us">قيّمنا</string>
+    <string name="feature_settings_action_rate_us_tip">قيّم تطبيقنا على متجر Play</string>
+
     <string name="feature_settings_action_faq">الأسئلة الشائعة</string>
     <string name="feature_settings_action_faq_tip">الأسئلة المتكررة من قبل المستخدمين</string>
 
@@ -61,6 +63,8 @@
     <string name="feature_settings_action_logout">تسجيل الخروج</string>
     <string name="feature_settings_action_logout_tip">تسجيل الخروج من جميع الأجهزة</string>
 
+    <string name="feature_settings_logout_action">العودة إلى الصفحة الرئيسية</string>
+
     <string name="feature_settings_top_bar_title">الإعدادات</string>
 
     <string name="feature_settings_error_fetching_client">فشل في جلب معلومات العميل.</string>
@@ -68,6 +72,7 @@
     <string name="feature_settings_internet_not_connected">لا يوجد اتصال بالإنترنت.</string>
     <string name="feature_settings_error_invalid_profile_image">تنسيق صورة الملف الشخصي غير صالح.</string>
     <string name="feature_settings_customer_account_no">حساب العميل: %1$s</string>
+    <string name="feature_settings_logout_description">تسجيل الخروج سينهي جلستك الحالية وجميع الجلسات النشطة لأغراض أمنية. ستحتاج إلى تسجيل الدخول مرة أخرى للوصول إلى حسابك.</string>
     <string name="feature_settings_logout_message">هل أنت متأكد من تسجيل الخروج؟</string>
 
     <!-- About Screen -->
@@ -162,4 +167,19 @@
 
     <string name="feature_settings_faq_doubt">هل لا تزال لديك الشكوك؟</string>
     <string name="feature_settings_faq_contact_us"> اتصل بنا</string>
+
+    <!-- Change Language   -->
+    <string name="feature_settings_language">اللغة</string>
+    <string name="feature_settings_change_language">تغيير اللغة</string>
+
+    <!--  Theme  -->
+    <string name="feature_settings_theme_light">الوضع الفاتح</string>
+    <string name="feature_settings_theme_dark">الوضع الداكن</string>
+    <string name="feature_settings_theme_system">الوضع الافتراضي للنظام</string>
+    <string name="feature_settings_apply_theme">تطبيق المظهر</string>
+    <string name="feature_settings_theme_based_on_time">بناءً على الوقت</string>
+    <string name="feature_settings_theme_choose_dark_mode_time">اختر وقت الوضع الداكن</string>
+    <string name="feature_settings_theme_choose_dark_mode_starts_at">يبدأ الوضع الداكن في</string>
+    <string name="feature_settings_theme_choose_dark_mode_ends_at">ينتهي الوضع الداكن في</string>
+    <string name="feature_settings_theme_apply">تطبيق</string>
 </resources>

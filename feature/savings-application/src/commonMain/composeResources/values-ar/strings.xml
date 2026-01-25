@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+
+    <!-- Titles -->
+    <string name="feature_apply_savings_title">تفاصيل طلب التوفير</string>
+
+    <!-- Sections -->
+    <string name="feature_apply_savings_section_fill_details">املأ تفاصيل الطلب</string>
+
+    <!-- Labels -->
+    <string name="feature_apply_savings_label_applicant_name">اسم المتقدم</string>
+    <string name="feature_apply_savings_label_savings_product">اسم المنتج</string>
+    <string name="feature_apply_savings_label_field_officer">ضابط ميداني</string>
+    <string name="feature_apply_savings_label_submission_date">تاريخ التقديم</string>
+    <string name="feature_apply_savings_label_fill_application_details">املأ تفاصيل الطلب</string>
+    <string name="feature_apply_savings_label_details">تفاصيل</string>
+    <string name="feature_apply_savings_label_currency">العملة</string>
+    <string name="feature_apply_savings_label_minimum_opening_balance">الحد الأدنى للرصيد الافتتاحي</string>
+    <string name="feature_apply_savings_label_lock_in_period">فترة الإغلاق</string>
+    <string name="feature_apply_savings_label_frequency">التكرار</string>
+    <string name="feature_apply_savings_label_frequency_type">نوع التكرار</string>
+    <string name="feature_apply_savings_label_overdraft">السحب على المكشوف</string>
+    <string name="feature_apply_savings_label_request_to_allow_overdraft">طلب السماح بالسحب على المكشوف</string>
+
+    <!-- Buttons -->
+    <string name="feature_apply_savings_button_continue">متابعة</string>
+    <string name="feature_apply_savings_button_ok">موافق</string>
+    <string name="feature_apply_savings_button_cancel">إلغاء</string>
+    <string name="feature_apply_savings_button_apply">تطبيق التوفير</string>
+    <string name="feature_button_next">التالي</string>
+
+    <!-- Principal Amount Validation -->
+    <string name="feature_apply_savings_error_amount_empty">المبلغ الأساسي مطلوب</string>
+    <string name="feature_apply_savings_error_amount_invalid_format">الرجاء إدخال تنسيق مبلغ صالح</string>
+    <string name="feature_apply_savings_error_amount_too_small">المبلغ الأساسي صغير جدًا</string>
+    <string name="feature_apply_savings_error_amount_too_large">يتجاوز المبلغ الأساسي الحد الأقصى</string>
+    <string name="feature_apply_savings_error_amount_invalid_decimal">يحتوي المبلغ على عدد كبير جدًا من المنازل العشرية للعملة المحددة</string>
+
+
+    <!-- Savings Product Validation -->
+    <string name="feature_apply_savings_error_product_empty">منتج التوفير مطلوب</string>
+
+    <!-- Error Dialogs -->
+    <string name="feature_apply_savings_error_server">مشكلة في الخادم من جانبنا، لا يمكن المتابعة، يرجى المحاولة مرة أخرى بعد لحظة</string>
+    <string name="feature_apply_savings_error_too_many_attempts">عدد كبير جدًا من المحاولات الفاشلة. يرجى المحاولة مرة أخرى لاحقًا.</string>
+    <string name="feature_apply_savings_error_submit_failed">فشل تقديم طلب التوفير. يرجى المحاولة مرة أخرى.</string>
+
+    <!-- Success Messages -->
+    <string name="feature_apply_savings_success_submit">تم تقديم طلب التوفير بنجاح!</string>
+    <string name="feature_apply_savings_success_draft_saved">تم حفظ مسودة الطلب بنجاح</string>
+
+    <!-- Dialog Titles & Messages -->
+    <string name="feature_apply_savings_unsaved_changes_title">تغييرات غير محفوظة!</string>
+    <string name="feature_apply_savings_unsaved_changes_message">لديك تغييرات غير محفوظة. هل أنت متأكد أنك تريد العودة؟</string>
+
+
+    <string name="feature_apply_savings_label_next">التالي</string>
+
+    <string name="feature_apply_savings_error_currency_required">العملة مطلوبة</string>
+    <string name="feature_apply_savings_error_minimum_opening_balance_required">الحد الأدنى للرصيد الافتتاحي مطلوب</string>
+    <string name="feature_apply_savings_error_lock_in_period_required">فترة الإغلاق مطلوبة</string>
+    <string name="feature_apply_savings_error_frequency_required">التكرار مطلوب</string>
+    <string name="feature_apply_savings_error_frequency_invalid">أدخل تكرارًا صالحًا</string>
+
+    <string name="feature_apply_savings_status_success">تم التقديم بنجاح!</string>
+    <string name="feature_apply_savings_status_success_tip">لقد تقدمت بنجاح للحصول على حساب توفير تحت %1$s.</string>
+    <string name="feature_apply_savings_status_success_action">العودة إلى الصفحة الرئيسية</string>
+
+    <string name="feature_apply_savings_status_failure">فشل تقديم الطلب</string>
+    <string name="feature_apply_savings_status_failure_tip">فشل التقديم لحساب توفير تحت %1$s.</string>
+    <string name="feature_apply_savings_status_failure_action">حاول مرة أخرى</string>
+
+</resources>

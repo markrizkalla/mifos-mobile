@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <!--
     Copyright 2026 Mifos Initiative
 
@@ -7,8 +7,7 @@
     You can obtain one at https://mozilla.org/MPL/2.0/.
 
     See https://github.com/openMF/mobile-mobile/blob/master/LICENSE.md
--->
-<resources>
+--><resources>
     <string name="error_fetching_beneficiaries">Failed to fetch Beneficiaries</string>
     <string name="error_fetching_beneficiary_template">Failed to fetch Beneficiary Template</string>
     <string name="error_fetching_template">Failed to fetch template</string>
@@ -117,4 +116,7 @@
     <string name="type_of_account">Type of Account</string>
     <string name="selected_count">%1$d selected</string>
     <string name="filter_icon_description">Filter icon</string>
+
+    <!-- Beneficiary Filter Types -->
+    <string name="feature_generic_error_server">Server issue from our side cannot proceed further, Try again after a moment</string>
 </resources>

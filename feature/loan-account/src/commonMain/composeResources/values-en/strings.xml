@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <!--
     Copyright 2026 Mifos Initiative
 
@@ -7,8 +7,7 @@
     You can obtain one at https://mozilla.org/MPL/2.0/.
 
     See https://github.com/openMF/mobile-mobile/blob/master/LICENSE.md
--->
-<resources>
+--><resources>
     <string name="feature_loan_account_filter_active">Active</string>
     <string name="feature_loan_account_filter_approval_pending">Approval Pending</string>
     <string name="feature_loan_account_filter_closed">Closed</string>
@@ -103,7 +102,12 @@
     <string name="feature_loan_installments_left_label">Installments Left</string>
     <string name="feature_loan_total_installments_label">Total Installments</string>
 
+    <!-- Installment Details -->
+    <string name="feature_loan_installment_number">%1$s Installment</string>
+    <string name="feature_loan_repayment_pay">Pay %1$s</string>
     <string name="feature_loan_paid">Paid</string>
     <string name="feature_loan_due">Due</string>
     <string name="feature_loan_pay">Pay</string>
+<string name="feature_generic_error_server">Server issue from our side cannot proceed further, Try again after a moment</string>
+
 </resources>

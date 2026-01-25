@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+    <string name="feature_onboarding_choose_your_app_language">Elige el idioma de tu aplicación</string>
+    <string name="feature_onboarding_chosen_language_can_be_changed_later_in_the_settings">El idioma elegido se puede cambiar más tarde en la configuración.</string>
+    <string name="feature_onboarding_default">Sistema (Predeterminado)</string>
+    <string name="feature_onboarding_english">Inglés</string>
+    <string name="feature_onboarding_telugu">Telugu(తెలుగు)</string>
+    <string name="feature_onboarding_hindi">Hindi(हिन्दी)</string>
+    <string name="feature_onboarding_arabic">Árabe(عربى)</string>
+    <string name="feature_onboarding_urdu">Urdu(اُردُو)</string>
+    <string name="feature_onboarding_bengali">Bengalí(বাঙালি)</string>
+    <string name="feature_onboarding_spanish">Español(Español)</string>
+    <string name="feature_onboarding_french">Francés(français)</string>
+    <string name="feature_onboarding_indonesian">Indonesio(bahasa Indonesia)</string>
+    <string name="feature_onboarding_khmer">Jemer(ភាសាខ្មែរ)</string>
+    <string name="feature_onboarding_kannada">Kannada(ಕನ್ನಡ)</string>
+    <string name="feature_onboarding_burmese">Birmano(မြန်မာ)</string>
+    <string name="feature_onboarding_polish">Polaco (Polski)</string>
+    <string name="feature_onboarding_portuguese">Portugués (Português)</string>
+    <string name="feature_onboarding_russian">Ruso (русский)</string>
+    <string name="feature_onboarding_swahili">Suajili (Kiswahili)</string>
+    <string name="feature_onboarding_farsi">Persa (فارسی)</string>
+    <string name="feature_onboarding_submit">Enviar</string>
+</resources>

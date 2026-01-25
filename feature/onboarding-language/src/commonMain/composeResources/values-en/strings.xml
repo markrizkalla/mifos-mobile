@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+    <string name="feature_onboarding_choose_your_app_language">Choose Your App Language</string>
+    <string name="feature_onboarding_chosen_language_can_be_changed_later_in_the_settings">Chosen language can be changed later in settings.</string>
+    <string name="feature_onboarding_default">System(Default)</string>
+    <string name="feature_onboarding_english">English</string>
+    <string name="feature_onboarding_telugu">Telugu(తెలుగు)</string>
+    <string name="feature_onboarding_hindi">Hindi(हिन्दी)</string>
+    <string name="feature_onboarding_arabic">Arabic(عربى)</string>
+    <string name="feature_onboarding_urdu">Urdu(اُردُو)</string>
+    <string name="feature_onboarding_bengali">Bengali(বাঙালি)</string>
+    <string name="feature_onboarding_spanish">Spanish(Español)</string>
+    <string name="feature_onboarding_french">French(français)</string>
+    <string name="feature_onboarding_indonesian">Indonesian(bahasa Indonesia)</string>
+    <string name="feature_onboarding_khmer">Khmer(ភាសាខ្មែរ)</string>
+    <string name="feature_onboarding_kannada">Kannada(ಕನ್ನಡ)</string>
+    <string name="feature_onboarding_burmese">Burmese(မြန်မာ)</string>
+    <string name="feature_onboarding_polish">Polish(Polski)</string>
+    <string name="feature_onboarding_portuguese">Portuguese(Português)</string>
+    <string name="feature_onboarding_russian">Russian(русский)</string>
+    <string name="feature_onboarding_swahili">Swahili(Kiswahili)</string>
+    <string name="feature_onboarding_farsi">Farsi(فارسی)</string>
+    <string name="feature_onboarding_submit">Submit</string>
+</resources>

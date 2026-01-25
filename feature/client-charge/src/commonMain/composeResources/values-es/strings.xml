@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <!--
     Copyright 2026 Mifos Initiative
 
@@ -7,8 +7,7 @@
     You can obtain one at https://mozilla.org/MPL/2.0/.
 
     See https://github.com/openMF/mobile-mobile/blob/master/LICENSE.md
--->
-<resources>
+--><resources>
     <string name="internet_not_connected">Asegúrese de estar conectado a Internet.</string>
     <string name="client_charges">Cargos del cliente</string>
     <string name="loan_charges">Cargos de cuentas de crédito</string>
@@ -20,6 +19,9 @@
     <string name="amount_outstanding">Pendiente:</string>
     <string name="amount_waived">Condonado:</string>
     <string name="amount_paid">Pagado:</string>
+
+    <string name="feature_client_charge_share_charges">Compartir Cargos</string>
+
 
     <string name="charge_details">Detalles del cargo</string>
     <string name="paid_success_message">Usted ha pagado exitosamente este cargo en su totalidad</string>
@@ -36,5 +38,8 @@
     <string name="paid">Pagado</string>
     <string name="waived">Condonado</string>
     <string name="outstanding">Pendiente</string>
+
+    <!-- Charge Details Map Labels -->
+    <string name="feature_generic_error_server">Problema del servidor por nuestra parte, no se puede continuar. Inténtalo de nuevo en un momento</string>
 
 </resources>

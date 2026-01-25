@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+    <string name="mifos_initiative">مبادرة ميفوس</string>
+    <string name="mifos_location">مبادرة ميفوس، سياتل، واشنطن 98121</string>
+    <string name="map_marker_heading">سياتل</string>
+    <string name="map_marker_desc">موطن صناعة تقنية كبيرة</string>
+</resources>

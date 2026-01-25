@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+    <string name="notification">إشعار</string>
+    <string name="dialog_action_ok">موافق</string>
+    <string name="no_notification">لا يوجد إشعار</string>
+
+</resources>

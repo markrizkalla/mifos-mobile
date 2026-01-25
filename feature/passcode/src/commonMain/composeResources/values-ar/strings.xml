@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+
+    <string name="feature_passcode_setup">إعداد رمز المصادقة</string>
+    <string name="feature_passcode_tip">أدخل رمز المصادقة المكون من 4 أرقام لإعداد طبقة المصادقة</string>
+    <string name="feature_passcode_confirm">تأكيد رمز المصادقة</string>
+    <string name="feature_passcode_setup_successful">تم بنجاح</string>
+    <string name="feature_passcode_setup_successful_msg">تم إعداد رمز المصادقة بنجاح. سيتم استخدامه بشكل متكرر في التطبيق</string>
+    <string name="feature_passcode_setup_failure">فشل</string>
+    <string name="feature_passcode_setup_failure_msg">فشل إعداد رمز المصادقة. سيتم استخدامه بشكل متكرر في التطبيق، لذا يرجى المحاولة مرة أخرى.</string>
+
+    <string name="feature_passcode_common_continue">متابعة</string>
+    <string name="feature_passcode_common_try_again">حاول مرة أخرى</string>
+
+    <string name="feature_passcode_authenticate">أدخل رمز المصادقة</string>
+    <string name="feature_passcode_authenticate_tip">قم بتأكيد هويتك عن طريق إدخال رمز المصادقة المكون من 4 أرقام لإكمال الإجراء</string>
+</resources>
