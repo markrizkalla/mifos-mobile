@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <!--
     Copyright 2024 Mifos Initiative
 
@@ -7,8 +7,7 @@
     You can obtain one at https://mozilla.org/MPL/2.0/.
 
     See https://github.com/openMF/mobile-mobile/blob/master/LICENSE.md
--->
-<resources>
+--><resources>
 
     <!-- Titles -->
     <string name="feature_apply_loan_title">Solicitar nuevo crédito</string>
@@ -48,6 +47,9 @@
     <string name="feature_apply_loan_error_amount_invalid_decimal">El monto tiene demasiados decimales para la moneda seleccionada</string>
 
     <!-- Disbursement Date Validation -->
+    <!-- Principal Amount Validation -->
+    <string name="feature_apply_loan_error_amount_multiple">El monto no es un múltiplo válido</string>
+
     <string name="feature_apply_loan_error_date_empty">Se requiere fecha de desembolso</string>
     <string name="feature_apply_loan_error_date_invalid_format">Por favor, introduzca un formato de fecha válido (DD/MM/YYYY)</string>
     <string name="feature_apply_loan_error_date_future">La fecha de desembolso debe ser futura</string>

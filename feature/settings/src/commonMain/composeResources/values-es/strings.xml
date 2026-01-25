@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <!--
     Copyright 2026 Mifos Initiative
 
@@ -7,8 +7,7 @@
     You can obtain one at https://mozilla.org/MPL/2.0/.
 
     See https://github.com/openMF/mobile-mobile/blob/master/LICENSE.md
--->
-<resources>
+--><resources>
     <string name="change_app_theme">Cambiar diseño</string>
     <string name="settings">Propiedades</string>
     <string name="password_key" translatable="false">Contraseña</string>
@@ -88,6 +87,8 @@
     <string name="feature_settings_action_logout">Salir</string>
     <string name="feature_settings_action_logout_tip">Cerrar sesión en todos los dispositivos</string>
 
+    <string name="feature_settings_logout_action">Volver a la página principal</string>
+
     <string name="feature_settings_top_bar_title">Ajustes</string>
 
     <string name="feature_settings_error_fetching_client">No se pudo obtener la información del cliente.</string>
@@ -95,6 +96,7 @@
     <string name="feature_settings_internet_not_connected">Sin conexión a Internet.</string>
     <string name="feature_settings_error_invalid_profile_image">Formato de imagen de perfil no válido.</string>
     <string name="feature_settings_customer_account_no">Cuenta de cliente: %1$s</string>
+    <string name="feature_settings_logout_description">Cerrar sesión finalizará tu sesión actual y todas las sesiones activas por motivos de seguridad. Deberás iniciar sesión nuevamente para acceder a tu cuenta.</string>
     <string name="feature_settings_logout_message">¿Estás seguro de cerrar sesión?</string>
 
     <!-- About Screen -->
@@ -200,4 +202,10 @@
     <string name="feature_settings_theme_system">Tema predeterminado del sistema</string>
     <string name="feature_settings_apply_theme">Aplicar tema</string>
 
+    <!--  Theme  -->
+    <string name="feature_settings_theme_based_on_time">Según la hora</string>
+    <string name="feature_settings_theme_choose_dark_mode_time">Elegir hora del modo oscuro</string>
+    <string name="feature_settings_theme_choose_dark_mode_starts_at">El modo oscuro comienza a las</string>
+    <string name="feature_settings_theme_choose_dark_mode_ends_at">El modo oscuro termina a las</string>
+    <string name="feature_settings_theme_apply">Aplicar</string>
 </resources>

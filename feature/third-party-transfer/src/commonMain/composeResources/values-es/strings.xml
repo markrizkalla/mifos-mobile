@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <!--
     Copyright 2026 Mifos Initiative
 
@@ -7,8 +7,7 @@
     You can obtain one at https://mozilla.org/MPL/2.0/.
 
     See https://github.com/openMF/mobile-mobile/blob/master/LICENSE.md
--->
-<resources>
+--><resources>
     <!-- Error messages -->
     <string name="feature_tpt_error_amount_required">Monto es requerido</string>
     <string name="feature_tpt_error_amount_invalid">Ingresar un monto válido</string>
@@ -17,6 +16,9 @@
     <string name="feature_tpt_error_server">La solicitud para actualizar los datos de la cuenta ha fallado. Inténtelo de nuevo.</string>
 
     <!-- Labels -->
+    <!-- Error messages -->
+    <string name="feature_tpt_error_amount_exceeds_balance">La cantidad excede el saldo disponible </string>
+
     <string name="feature_tpt_label_origin_account">Cuenta Origen</string>
     <string name="feature_tpt_label_origin_account_hint">Seleccionar otra Cuenta de Ahorros</string>
     <string name="feature_tpt_label_destination">Cuenta Destino</string>

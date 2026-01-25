@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+    <string name="view_guarantor">عرض الضامن</string>
+    <string name="add_guarantor">إضافة ضامن</string>
+    <string name="delete_guarantor">حذف الضامن</string>
+    <string name="update_guarantor">تحديث الضامن</string>
+    <string name="guarantor_type">نوع الضامن</string>
+    <string name="no_guarantors">لا يوجد ضمانات</string>
+    <string name="tap_to_add_guarantor">اضغط لإضافة ضامن</string>
+    <string name="guarantor_details">تفاصيل الضامن</string>
+    <string name="screen_guarantor_list">قائمة الضمانات</string>
+    <string name="screen_guarantor_details">تفاصيل الضامن</string>
+    <string name="screen_guarantor_add">إضافة ضامن</string>
+    <string name="city">مدينة</string>
+    <string name="guarantor_deleted_successfully">تم حذف الضامن بنجاح</string>
+    <string name="guarantor_created_successfully">تم إنشاء الضامن بنجاح</string>
+    <string name="guarantor_updated_successfully">تم تحديث الضامن بنجاح</string>
+    <string name="error_validation_blank">%1$s لا يمكن أن يكون فارغًا</string>
+    <string name="first_name">الاسم الأول</string>
+    <string name="last_name">اسم العائلة</string>
+    <string name="phone_number">رقم الهاتف</string>
+    <string name="internet_not_connected">الرجاء تشغيل شبكة Wi-Fi أو بيانات الجوال</string>
+    <string name="office_name">اسم المكتب</string>
+    <string name="submit">إرسال</string>
+    <string name="dialog_are_you_sure_that_you_want_to_string">هل أنت متأكد أنك تريد %1$s؟</string>
+    <string name="yes">نعم</string>
+    <string name="dismiss">إغلاق</string>
+</resources>

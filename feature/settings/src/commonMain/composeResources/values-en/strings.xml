@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <!--
     Copyright 2026 Mifos Initiative
 
@@ -7,8 +7,7 @@
     You can obtain one at https://mozilla.org/MPL/2.0/.
 
     See https://github.com/openMF/mobile-mobile/blob/master/LICENSE.md
--->
-<resources>
+--><resources>
     <string name="change_app_theme">Change theme</string>
     <string name="settings">Settings</string>
     <string name="password_key" translatable="false">Password</string>
@@ -73,6 +72,9 @@
     <string name="feature_settings_action_about_us">About Us</string>
     <string name="feature_settings_action_about_us_tip">Find more about our initiative</string>
 
+    <string name="feature_settings_action_rate_us">Rate Us</string>
+    <string name="feature_settings_action_rate_us_tip">Rate our app on PlayStore</string>
+
     <string name="feature_settings_action_faq">FAQ</string>
     <string name="feature_settings_action_faq_tip">Frequently asked questions by users</string>
 
@@ -85,6 +87,8 @@
     <string name="feature_settings_action_logout">Logout</string>
     <string name="feature_settings_action_logout_tip">Logout from all devices</string>
 
+    <string name="feature_settings_logout_action">Back to home</string>
+
     <string name="feature_settings_top_bar_title">Settings</string>
 
     <string name="feature_settings_error_fetching_client">Failed to fetch client information.</string>
@@ -92,6 +96,7 @@
     <string name="feature_settings_internet_not_connected">No internet connection.</string>
     <string name="feature_settings_error_invalid_profile_image">Invalid profile image format.</string>
     <string name="feature_settings_customer_account_no">Customer Account: %1$s</string>
+    <string name="feature_settings_logout_description">Logging out will end your current and all active sessions for security purposes. You’ll need to log in again to access your account.</string>
     <string name="feature_settings_logout_message">Are you sure to logout?</string>
 
     <!-- About Screen -->
@@ -199,4 +204,15 @@
     <!-- Change Language   -->
     <string name="feature_settings_language">Language</string>
     <string name="feature_settings_change_language">Change Language</string>
+
+    <!--  Theme  -->
+    <string name="feature_settings_theme_light">Light Theme</string>
+    <string name="feature_settings_theme_dark">Dark Theme</string>
+    <string name="feature_settings_theme_system">Default System Theme</string>
+    <string name="feature_settings_apply_theme">Apply Theme</string>
+    <string name="feature_settings_theme_based_on_time">Based on Time</string>
+    <string name="feature_settings_theme_choose_dark_mode_time">Choose Dark Mode Time</string>
+    <string name="feature_settings_theme_choose_dark_mode_starts_at">Dark mode starts at</string>
+    <string name="feature_settings_theme_choose_dark_mode_ends_at">Dark mode ends at</string>
+    <string name="feature_settings_theme_apply">Apply</string>
 </resources>

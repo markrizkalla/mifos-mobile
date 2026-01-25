@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <!--
     Copyright 2026 Mifos Initiative
 
@@ -7,11 +7,12 @@
     You can obtain one at https://mozilla.org/MPL/2.0/.
 
     See https://github.com/openMF/mobile-mobile/blob/master/LICENSE.md
--->
-<resources>
+--><resources>
     <string name="beneficiaries">المستفيدون</string>
     <string name="survey">الاستبيانات</string>
     <string name="apply_for_loan">التقديم على قرض</string>
+    <string name="apply_for_savings">فتح حساب توفير</string>
+    <string name="apply_for_share">فتح حساب أسهم</string>
     <string name="charges">الرسوم</string>
     <string name="transfer">تحويل</string>
     <string name="accounts">الحسابات</string>
@@ -52,8 +53,16 @@
     <string name="feature_home_beneficiary">المستفيد</string>
     <string name="feature_home_faq">الأسئلة الشائعة</string>
 
+    <string name="feature_home_saving_account">حساب توفير</string>
+    <string name="feature_home_loan_account">حساب قرض</string>
+    <string name="feature_home_savings_tip">اربح فائدة على ودائعك مع إمكانية الوصول المرنة إلى أموالك في أي وقت.</string>
+    <string name="feature_home_loan_tip">احصل على الأموال التي تحتاجها لأغراض شخصية أو تجارية أو تعليمية.</string>
+
     <string name="feature_home_total_available_savings">إجمالي المدخرات المتاحة</string>
     <string name="feature_home_total_available_loan">إجمالي القروض المتاحة</string>
 
     <string name="feature_home_common_error">حدث خطأ ما</string>
+<string name="feature_server_error">حدث خطأ غير متوقع في الخادم الخاص بنا. يرجى المحاولة مرة أخرى لاحقًا.</string>
+
+
 </resources>

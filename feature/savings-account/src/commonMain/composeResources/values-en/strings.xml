@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <!--
     Copyright 2026 Mifos Initiative
 
@@ -7,8 +7,7 @@
     You can obtain one at https://mozilla.org/MPL/2.0/.
 
     See https://github.com/openMF/mobile-mobile/blob/master/LICENSE.md
--->
-<resources>
+--><resources>
     <string name="feature_account_active">Active</string>
     <string name="feature_account_approved">Approved</string>
     <string name="feature_account_approval_pending">Approval Pending</string>
@@ -97,10 +96,56 @@
 
     <!--    Update savings Account-->
 
-    <string name="feature_savings_update_topbar_title">Update Details</string>
+    <!--    Savings Account Details Values-->
+    <string name="feature_account_action_transactions">Transactions</string>
+    <string name="feature_account_action_transactions_tip">Recent transactions of this account</string>
+    <string name="feature_account_action_charges">Charges</string>
+    <string name="feature_account_action_charges_tip">Fees or charges on this account</string>
+    <string name="feature_account_action_qr">QR Code</string>
+    <string name="feature_account_action_qr_tip">Generate QR code</string>
+
+    <string name="feature_savings_account_number_label">Account Number</string>
+    <string name="feature_savings_available_balance_label">Available Balance</string>
+    <string name="feature_savings_status_label">Status</string>
+    <string name="feature_savings_nominal_interest_rate_label">Nominal Interest Rate</string>
+    <string name="feature_savings_total_deposits_label">Total Deposits</string>
+    <string name="feature_savings_total_withdrawals_label">Total Withdrawals</string>
+    <string name="feature_savings_transaction_amount_label">Amount</string>
+    <string name="feature_savings_transaction_date_label">Date</string>
+
+
+<string name="feature_savings_update_topbar_title">Update Details</string>
     <string name="feature_savings_update_client_name_label">Client Name</string>
     <string name="feature_savings_update_submission_date_label">Submission Date</string>
     <string name="feature_savings_update_select_product_id">Select Product Id</string>
     <string name="feature_savings_update_submit">Submit</string>
     <string name="feature_savings_update_cancel">Cancel</string>
+
+    <!--    Update savings Account-->
+    <string name="feature_savings_update_account_number_label">Account Number</string>
+    <string name="feature_savings_update_product_label">Product</string>
+    <string name="feature_savings_update_request_update">Request Update</string>
+    <string name="feature_savings_new_product_label">New Product</string>
+
+    <string name="feature_savings_savings_product_empty">Currently Loan Products are not available</string>
+
+    <string name="feature_savings_update_request_successful">Request Submitted Successfully</string>
+    <string name="feature_savings_update_request_successful_message">Request to update the account details is submitted successfully</string>
+    <string name="feature_savings_update_request_back_to_home">Back To Home</string>
+
+    <string name="feature_savings_update_request_failed">Request Failed To Submit</string>
+    <string name="feature_savings_update_request_failed_message">Request to update the account details is failed. Please try again </string>
+    <string name="feature_savings_update_request_try_again">Try Again</string>
+
+    <!--    Withdraw savings account-->
+    <string name="feature_savings_withdraw_account_topbar_title">Withdraw Account</string>
+    <string name="feature_savings_withdraw_remarks_label">Remarks</string>
+    <string name="feature_savings_withdraw_request_withdraw">Request Update</string>
+    <string name="feature_savings_withdraw_request_successful">Request Submitted Successfully</string>
+    <string name="feature_savings_withdraw_request_successful_message">Request to withdraw the account is submitted successfully </string>
+    <string name="feature_savings_withdraw_request_failed">Request Failed To Submit</string>
+    <string name="feature_savings_withdraw_request_failed_message">Request to withdraw the account is failed. Please try again </string>
+
+    <string name="feature_savings_no_accounts_found">No Savings Accounts Found</string>
+        <string name="feature_generic_error_server">Server issue from our side cannot proceed further, Try again after a moment</string>
 </resources>

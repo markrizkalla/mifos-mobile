@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+
+    <!-- Top Bar -->
+    <string name="feature_share_title">مشاركة تفاصيل التطبيق</string>
+    <string name="feature_share_navigation_back">رجوع</string>
+
+    <!-- Form Labels -->
+    <string name="feature_share_label_applicant_name">اسم المتقدم</string>
+    <string name="feature_share_label_submission_date">تاريخ التقديم</string>
+    <string name="feature_share_label_product_name">اسم المنتج</string>
+
+    <!-- Buttons -->
+    <string name="feature_share_button_next">التالي</string>
+
+    <string name="feature_apply_share_error_server">مشكلة في الخادم من جانبنا، لا يمكن المتابعة، حاول مرة أخرى بعد لحظة</string>
+    <string name="feature_apply_share_error_too_many_attempts">عدد كبير جدًا من المحاولات الفاشلة. يرجى المحاولة مرة أخرى لاحقًا.</string>
+    <string name="feature_apply_share_error_submit_failed">فشل تقديم طلب التوفير. يرجى المحاولة مرة أخرى.</string>
+
+    <string name="feature_apply_share_unsaved_changes_title">تغييرات غير محفوظة!</string>
+    <string name="feature_apply_share_unsaved_changes_message">لديك تغييرات غير محفوظة. هل أنت متأكد أنك تريد الرجوع؟</string>
+    <string name="feature_share_no_products_available">لا توجد منتجات مشاركة متاحة لفتح حساب مشاركة</string>
+
+
+    <string name="feature_apply_share_label_terms">الشروط</string>
+    <string name="feature_apply_share_label_currency">العملة</string>
+    <string name="feature_apply_share_label_current_price">السعر الحالي</string>
+    <string name="feature_apply_share_label_total_number_of_shares">إجمالي عدد الأسهم</string>
+    <string name="feature_apply_share_label_default_savings_account">حساب التوفير الافتراضي</string>
+
+    <string name="feature_apply_share_label_minimum_active_period">الحد الأدنى للفترة النشطة</string>
+    <string name="feature_apply_share_section_minimum_active_period">الحد الأدنى للفترة النشطة</string>
+    <string name="feature_apply_share_label_minimum_frequency">التكرار</string>
+    <string name="feature_apply_share_label_minimum_frequency_type">نوع التكرار</string>
+
+    <string name="feature_apply_share_label_lockin_period">فترة الإغلاق</string>
+    <string name="feature_apply_share_section_lockin_period">فترة الإغلاق</string>
+    <string name="feature_apply_share_label_lockin_frequency">التكرار</string>
+    <string name="feature_apply_share_label_lockin_frequency_type">نوع التكرار</string>
+
+    <string name="feature_apply_share_error_frequency_required">التكرار مطلوب</string>
+    <string name="feature_apply_share_frequency_invalid">الرجاء إدخال تكرار صالح</string>
+
+    <string name="feature_apply_share_error_shares_required">الأسهم مطلوبة</string>
+    <string name="feature_apply_share_shares_invalid">الرجاء إدخال أسهم صالحة</string>
+
+    <string name="feature_apply_share_error_price_required">التكرار مطلوب</string>
+    <string name="feature_apply_share_price_invalid">الرجاء إدخال تردد صالح</string>
+
+    <string name="feature_apply_share_status_failure">فشل تقديم الطلب</string>
+    <string name="feature_apply_share_status_failure_tip">فشل في تطبيق حساب حصة تحت %1$s</string>
+    <string name="feature_apply_share_status_failure_action">حاول مرة أخرى</string>
+
+    <string name="feature_apply_share_status_success">تم التطبيق بنجاح!</string>
+    <string name="feature_apply_share_status_success_tip">لقد تقدمت بنجاح للحصول على حساب حصة تحت %1$s</string>
+    <string name="feature_apply_share_status_success_action">العودة إلى الصفحة الرئيسية</string>
+</resources>

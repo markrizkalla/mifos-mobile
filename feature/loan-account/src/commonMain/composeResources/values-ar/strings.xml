@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <!--
     Copyright 2026 Mifos Initiative
 
@@ -7,8 +7,7 @@
     You can obtain one at https://mozilla.org/MPL/2.0/.
 
     See https://github.com/openMF/mobile-mobile/blob/master/LICENSE.md
--->
-<resources>
+--><resources>
     <string name="feature_loan_account_filter_active">نشط</string>
     <string name="feature_loan_account_filter_approval_pending">في انتظار الموافقة</string>
     <string name="feature_loan_account_filter_closed">مغلق</string>
@@ -103,7 +102,12 @@
     <string name="feature_loan_installments_left_label">الأقساط المتبقية</string>
     <string name="feature_loan_total_installments_label">إجمالي الأقساط</string>
 
+    <!-- Installment Details -->
+    <string name="feature_loan_installment_number">الدفعة %1$s</string>
+    <string name="feature_loan_repayment_pay">ادفع %1$s</string>
     <string name="feature_loan_paid">مدفوع</string>
     <string name="feature_loan_due">مستحق</string>
     <string name="feature_loan_pay">دفع</string>
+<string name="feature_generic_error_server">مشكلة في الخادم من جانبنا، لا يمكن المتابعة، حاول مرة أخرى بعد لحظة</string>
+
 </resources>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <!--
     Copyright 2026 Mifos Initiative
 
@@ -7,8 +7,7 @@
     You can obtain one at https://mozilla.org/MPL/2.0/.
 
     See https://github.com/openMF/mobile-mobile/blob/master/LICENSE.md
--->
-<resources>
+--><resources>
     <string name="feature_about_app_name">ميفوس موبايل</string>
     <string name="login">تسجيل الدخول</string>
     <string name="toast_welcome">%1$s أهلا بك</string>
@@ -36,6 +35,7 @@
     <string name="open_drawer">افتح الدرج</string>
     <string name="close_drawer">أغلق الدرج</string>
     <string name="home">الصفحة الرئيسية</string>
+    <string name="large_text">نص كبير</string>
     <string name="medium_text">نص متوسط</string>
     <string name="small_text">نص صغير</string>
     <string name="client_accounts">حسابات العملاء</string>
@@ -67,6 +67,7 @@
     <string name="withdraw_loan">سحب القرض</string>
     <string name="withdraw_loan_reason">سبب سحب القرض</string>
     <string name="loan_account_withdrawn_successfully">سحب حساب القرض بنجاح</string>
+    <string name="review">مراجعة</string>
     <string name="submit_loan">تقديم القرض</string>
     <string name="new_loan_application">طلب قرض جديد</string>
     <string name="update_loan_application">تحديث طلب القرض</string>
@@ -128,8 +129,10 @@
     <string name="rb_mobile">التليفون المحمول</string>
     <string name="rb_email">البريد الإلكتروني</string>
     <string name="verification_mode">وضع التحقق</string>
-    <string name="blank" />
+    <string name="blank"/>
     <string name="import_qr">استيراد QR</string>
+    <string name="use_touch_id">استخدام Touch ID</string>
+
     <string name="view_guarantor">عرض الضامن</string>
     <string name="add_guarantor">إضافة الضامن</string>
     <string name="delete_guarantor">حذف الضامن</string>
@@ -141,9 +144,36 @@
     <string name="joined_date">تاريخ الانضمام</string>
     <string name="submit">خضع</string>
 
+    <string name="select_product_id">حدد معرف المنتج</string>
+    <string name="account_id">معرف الحساب</string>
+    <string name="new_saving_account_application">طلب حساب توفير جديد</string>
+    <string name="update_savings_account">تحديث حساب التوفير</string>
+    <string name="withdraw_savings_account">سحب حساب التوفير</string>
+    <string name="withdrawal_date">تاريخ السحب</string>
+    <string name="new_saving_account_created_successfully">تم إنشاء حساب توفير جديد بنجاح.</string>
+    <string name="saving_account_updated_successfully">تم تحديث حساب التوفير بنجاح</string>
+    <string name="savings_account_withdraw_successful">سحب حساب التوفير بنجاح</string>
+    <string name="string_savings_account">%1$s حساب توفير</string>
+    <string name="apply">تطبيق</string>
+    <string name="apply_savings_account">تطبيق حساب توفير</string>
+    <string name="update">تحديث</string>
+    <string name="edit">تعديل</string>
+    <string name="passcode">رمز المرور</string>
+    <string name="other">أخرى</string>
+    <string name="gender">الجنس</string>
+    <string name="no">لا</string>
+    <string name="found">تم العثور عليه</string>x
+
+    <string name="change_passcode">تغيير رمز المرور</string>
+    <string name="change_app_passcode">تغيير رمز مرور التطبيق</string>
+    <string name="change_password">تغيير كلمة المرور</string>
+    <string name="string_changed_successfully">%1$s تم تغييره بنجاح</string>
+
     <string name="account_not_active_to_perform_deposit">يجب أن يكون الحساب نشطًا لتنفيذ الوديعة</string>
     <string name="account_not_active_to_perform_transfer">يجب أن يكون الحساب نشطًا لتنفيذ نقل</string>
 
+    <string name="empty_requestid">معرف الطلب لا يمكن أن يكون فارغًا</string>
+    <string name="empty_authentication_token">رمز المصادقة لا يمكن أن يكون فارغًا</string>
     <string name="feature_account_empty_savings_accounts">لا يوجد حساب SavingsAccount مرتبط بك</string>
     <string name="feature_account_empty_loan_accounts">لا يوجد LoanAccount مرتبط بك</string>
     <string name="feature_account_empty_share_accounts">لا يوجد ShareAccount مرتبط بك</string>
@@ -204,6 +234,7 @@
     <string name="client_charges">رسوم العميل</string>
     <string name="error_reading_qr"> خطأ أثناء قراءة QR ، تأكد من تحديد المنطقة المناسبة     </string>
     <string name="error_fetching_image">خطأ في جلب الصورة</string>
+    <string name="invalid_phn_number">رقم هاتف غير صالح</string>
     <string name="fetching_client">جلب العميل</string>
 
     <string name="not_contain_username">المساحات</string>
@@ -301,6 +332,8 @@
     <string name="update_beneficiary">تحديث المستفيد</string>
     <string name="delete_beneficiary">حذف المستفيد</string>
     <string name="delete_beneficiary_confirmation">هل أنت متأكد أنك تريد حذف هذا المستفيد</string>
+    <string name="login_using_password_confirmation">هل أنت متأكد أنك تريد تسجيل الدخول باستخدام كلمة المرور؟
+    </string>
     <string name="delete">حذف</string>
     <string name="beneficiary_deleted_successfully">المستفيد المحذوف بنجاح</string>
     <string name="third_party_transfer">نقل طرف ثالث</string>
@@ -317,6 +350,9 @@
     <string name="client_classification">تصنيف العميل</string>
     <string name="select_mode">حدد الوضع</string>
     <string name="add_beneficiary_option">إضافة المستفيدين من الأطراف الثالثة إلى حسابك. n\ أدخل يدويا أو مسح رمز الاستجابة السريعة حساب </string>
+    <string name="income_generating_loan">قرض توليدي للدخل</string>
+    <string name="not_applicable">غير قابل للتطبيق</string>
+    <string name="dummy_principal_amount">143.00</string>
     <string name="invalid_qr">لا يمكنك اتخاذ إجراء في حسابك ، يرجى مسح مستخدم آخر حساب الادخار والقروض QRCode </string>
     <string name="add">إضافة</string>
     <string name="scan">تفحص</string>
@@ -331,6 +367,9 @@
     <string name="passcode_does_not_match">رمز المرور غير متطابق.</string>
     <string name="forgot_passcode">نسيت رمز المرور ، ادخل يدويا</string>
     <string name="proceed">تقدم</string>
+    <string name="grant_permission">منح الإذن</string>
+    <string name="deny">رفض</string>
+    <string name="dismiss">إغلاق</string>
     <string name="amount_greater_than_zero">يجب أن يكون المبلغ أكبر من الصفر</string>
     <string name="about_us_under_construction">من نحن تحت الإنشاء</string>
     <string name="help_under_construction">مساعدة تحت الإنشاء</string>
@@ -365,7 +404,15 @@
     <string name="dialog_message_camera_permission_denied_prompt">بدون إذن الكاميرا سوف لن تتمكن من مسح رمز الاستجابة السريعة ضوئيًا لإضافة المستفيد.هل تريد بالتأكيد رفض هذا الإذن؟</string>
     <string name="dialog_message_camera_permission_never_ask_again">لقد رفضت الحصول على إذن استخدام الكاميرا ، بدون هذا الإذن لن تتمكن من إضافة المستفيدين باستخدام رمز الاستجابة السريعة. يرجى تمكينها في الإعدادات</string>
     <string name="dialog_message_storage_permission_denied_prompt">بدون إذن التخزين سوف لا يمكنك تحميل رمز الاستجابة السريعة لإضافة المستفيد.هل تريد بالتأكيد رفض هذا الإذن؟</string>
+
+    <!--Material Dialog-->
+    <string name="dialog_message_photoes_permission_denied_prompt">بدون إذن الوصول إلى الصور، لن تتمكن من تحميل رمز الاستجابة السريعة لإضافة مستفيد. هل أنت متأكد من أنك تريد رفض هذا
+        الإذن؟
+    </string>
     <string name="dialog_message_read_storage_permission_never_ask_again">لقد رفضت الحصول على إذن قراءة التخزين ، بدون هذا الإذن لن تتمكن من إضافة المستفيدين باستخدام QR Code. يرجى تمكينها في الإعدادات</string>
+    <string name="please_grant_us_storage_permissions"> يرجى منحنا إذن التخزين في الإعدادات.
+    </string>
+
     <string name="dialog_message_write_storage_permission_never_ask_again">لقد رفضت الحصول على إذن الكتابة إلى التخزين ، بدون هذا الإذن لن تتمكن من إضافة المستفيدين باستخدام رمز الاستجابة السريعة. يرجى تمكينها في الإعدادات</string>
     <string name="dialog_message_phone_state_permission_denied_prompt">هذا الإذن مطلوب لعرض العملة وفقًا لبلدك.هل تريد بالتأكيد إنكارها؟</string>
     <string name="dialog_message_phone_state_permission_never_ask_again">لقد رفضت الإذن         لجلب حالة الهاتف ، بدون هذا الإذن ، قد لا تظهر العملة بالشكل الصحيح. يرجى تمكينها في الإعدادات</string>
@@ -374,10 +421,15 @@
     <string name="dialog_are_you_sure_that_you_want_to_string">هل أنت متأكد أنك تريد %1$s؟</string>
 
     <!--Format Strings-->
+    <string name="err_during_login">خطأ أثناء تسجيل الدخول</string>
+
     <string name="hello_client">%1$s ،مرحبا</string>
     <string name="double_amount">%1$.2f</string>
     <string name="double_and_string">%2$s %1$.2f</string>
     <string name="feature_account_string_and_string">%2$s %1$s</string>
+
+    <!--Format Strings-->
+    <string name="playstore_link">%1$s%2$s</string>
     <string name="string_and_double">%2$.2f %1$s</string>
     <string name="string_and_int">%2$d :%1$s</string>
     <string name="invalid_amount">مبلغ غير صحيح</string>
@@ -430,6 +482,15 @@
 
     </string-array>
 
+    <string name="no_saving_account">حسابات التوفير</string>
+    <string name="no_loan_account">حسابات القروض</string>
+    <string name="no_sharing_account">حسابات المشاركة</string>
+
+    <string name="select_loan_product_field">اختر منتج القرض</string>
+    <string name="sign_in_fingerprint">تسجيل الدخول باستخدام بصمة الإصبع</string>
+    <string name="scan_your_fingerprint">امسح بصمة إصبعك</string>
+
+
     <string name="total_saving_balance">مجموع رصيد المدخرات</string>
     <string name="total_loan_balance">مجموع رصيد القرض</string>
     <string name="total_loan_savings_description">فوق رصيد القرض والادخار هي تحسب نيابة عن جميع حسابات الادخار والحسابات الخاصة بك.</string>
@@ -441,16 +502,72 @@
     <string name="feature_about_copyright_mifos">©2016-%1$s Mifos Initiative.</string>
     <string name="all_rights_reserved">كل الحقوق محفوظة.</string>
     <string name="feature_about_licenses">تراخيص</string>
+    <string name="feature_about_privacy_policy">سياسة الخصوصية</string>
     <string name="transfer_error">يتعذر إكمال النقل ، يرجى المحاولة مرة أخرى في وقت لاحق</string>
     <string name="please_wait">ارجوك انتظر…</string>
     <string name="message">رسالة</string>
+    <string name="no_image_selected_or_something_went_wrong">لم يتم تحديد أي صورة أو حدث خطأ ما</string>
+    <string name="seleted_qr_image">تم تحديد صورة رمز الاستجابة السريعة</string>
     <string name="no_notification">لا يوجد إشعارات</string>
 
     <string name="pref_base_url_title">تحديث نقطة النهاية</string>
     <string name="pref_base_url_desc">انقر هنا لتغيير تكوينات نقطة النهاية</string>
     <string name="enter_base_url">أدخل عنوان URL الأساسي</string>
     <string name="enter_tenant">أدخل المستأجر</string>
+    <string name="refresh">تحديث</string>
+
+    <!--Password strength strings-->
+    <string name="password_strength_weak">ضعيف</string>
+    <string name="password_strength_medium">متوسط</string>
+    <string name="password_strength_strong">قوي</string>
+    <string name="password_strength_very_strong">قوي جداً</string>
+    <string name="loan_purpose_not_provided">غير متوفر</string>
+    <string name="details">تفاصيل</string>
+    <string name="product">المنتج</string>
+
+    <string name="feature_account_dividend_payout">صرف الأرباح</string>
+    <string name="feature_account_withdrawal">سحب</string>
+    <string name="feature_account_interest_posting">إضافة الفوائد</string>
+    <string name="feature_account_fee_deduction">خصم الرسوم</string>
+    <string name="feature_account_withdrawal_transfer">تحويل السحب</string>
+    <string name="feature_account_rejected_transfer">تحويل مرفوض</string>
+    <string name="feature_account_overdraft_fee">رسوم السحب على المكشوف</string>
+    <string name="savings_account_transaction">معاملة حساب التوفير</string>
+    <string name="transaction_period">فترة المعاملة</string>
+    <string name="transaction_type">نوع المعاملة</string>
+    <string name="questions">أسئلة</string>
+    <string name="logged_out_successfully">تم تسجيل الخروج بنجاح</string>
+
+    <string name="dialog_cancel_registration_message">هل تريد إلغاء تسجيل حساب جديد؟</string>
+    <string name="dialog_cancel_registration_title">إلغاء التسجيل</string>
+    <string name="feature_about_sources">شفرة المصدر</string>
+    <string name="feature_about_official_website">الموقع الرسمي</string>
+    <string name="feature_about_app_version">إصدار التطبيق 1.0</string>
+    <string name="feature_about_license">الترخيص: MPL-2.0</string>
+    <string name="feature_about_description">تطبيق أندرويد مبني على منصة MifosX للخدمة الذاتية للعملاء النهائيين لعرض/إجراء معاملات على الحسابات والقروض التي يحملونها.</string>
+    <string name="or">أو</string>
+    <string name="no_app_to_support_action">لا يوجد تطبيق يدعم هذا الإجراء</string>
+    <string name="theme">السمة</string>
+    <string name="change_app_theme">تغيير السمة</string>
+
     <string name="app_info">معلومات التطبيق</string>
     <string name="show_hide_total_saving_amount">إظهار أو إخفاء إجمالي مبلغ التوفير</string>
     <string name="login_failed">فشل تسجيل الدخول يرجى المحاولة مرة أخرى في وقت لاحق.</string>
+<string name="password_changed_successfully">تم تغيير كلمة المرور بنجاح</string>
+    <string name="could_not_register_user_error">لم نتمكن من تسجيل المستخدم.</string>
+    <string name="no_questions_found">لم يتم العثور على أسئلة</string>
+    <string name="something_went_wrong">حدث خطأ ما</string>
+    <string name="atm_icon">أيقونة الصراف الآلي</string>
+    <string name="title_activity_guarantor">GuarantorActivity</string>
+    <string name="screen_guarantor_list">Screen Guarantor List</string>
+    <string name="screen_guarantor_details">Screen Guarantor Details</string>
+    <string name="screen_guarantor_add">Screen Guarantor Add</string>
+    <string name="city">مدينة</string>
+    <string name="guarantor_deleted_successfully">تم حذف الضامن بنجاح</string>
+    <string name="guarantor_created_successfully">تم إنشاء الضامن بنجاح</string>
+    <string name="guarantor_updated_successfully">تم تحديث الضامن بنجاح</string>
+    <string name="required">مطلوب</string>
+    <string name="s_no">رقم</string>
+    <string name="no_transaction_found">لم يتم العثور على معاملات</string>
+    <string name="not_connected">⚠️ أنت غير متصل بالإنترنت</string>
 </resources>

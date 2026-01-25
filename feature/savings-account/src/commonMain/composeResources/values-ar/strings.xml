@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <!--
     Copyright 2026 Mifos Initiative
 
@@ -7,8 +7,7 @@
     You can obtain one at https://mozilla.org/MPL/2.0/.
 
     See https://github.com/openMF/mobile-mobile/blob/master/LICENSE.md
--->
-<resources>
+--><resources>
     <string name="feature_account_active">نشيط</string>
     <string name="feature_account_approved">موافق عليه</string>
     <string name="feature_account_approval_pending">الموافقة معلقة</string>
@@ -97,10 +96,56 @@
 
     <!--    Update savings Account-->
 
-    <string name="feature_savings_update_topbar_title">تحديث التفاصيل</string>
+    <!--    Savings Account Details Values-->
+    <string name="feature_account_action_transactions">المعاملات</string>
+    <string name="feature_account_action_transactions_tip">المعاملات الأخيرة لهذا الحساب</string>
+    <string name="feature_account_action_charges">الرسوم</string>
+    <string name="feature_account_action_charges_tip">الرسوم أو التكاليف على هذا الحساب</string>
+    <string name="feature_account_action_qr">رمز الاستجابة السريعة</string>
+    <string name="feature_account_action_qr_tip">إنشاء رمز الاستجابة السريعة</string>
+
+    <string name="feature_savings_account_number_label">رقم الحساب</string>
+    <string name="feature_savings_available_balance_label">الرصيد المتاح</string>
+    <string name="feature_savings_status_label">الحالة</string>
+    <string name="feature_savings_nominal_interest_rate_label">سعر الفائدة الاسمي</string>
+    <string name="feature_savings_total_deposits_label">إجمالي الودائع</string>
+    <string name="feature_savings_total_withdrawals_label">إجمالي السحوبات</string>
+    <string name="feature_savings_transaction_amount_label">المبلغ</string>
+    <string name="feature_savings_transaction_date_label">التاريخ</string>
+
+
+<string name="feature_savings_update_topbar_title">تحديث التفاصيل</string>
     <string name="feature_savings_update_client_name_label">اسم العميل</string>
     <string name="feature_savings_update_submission_date_label">تاريخ التقديم</string>
     <string name="feature_savings_update_select_product_id">اختر معرف المنتج</string>
     <string name="feature_savings_update_submit">إرسال</string>
     <string name="feature_savings_update_cancel">إلغاء</string>
+
+    <!--    Update savings Account-->
+    <string name="feature_savings_update_account_number_label">رقم الحساب</string>
+    <string name="feature_savings_update_product_label">المنتج</string>
+    <string name="feature_savings_update_request_update">طلب تحديث</string>
+    <string name="feature_savings_new_product_label">منتج جديد</string>
+
+    <string name="feature_savings_savings_product_empty">حالياً لا توجد منتجات قروض متاحة</string>
+
+    <string name="feature_savings_update_request_successful">تم تقديم الطلب بنجاح</string>
+    <string name="feature_savings_update_request_successful_message">تم تقديم الطلب لتحديث تفاصيل الحساب بنجاح</string>
+    <string name="feature_savings_update_request_back_to_home">العودة إلى الصفحة الرئيسية</string>
+
+    <string name="feature_savings_update_request_failed">فشل تقديم الطلب</string>
+    <string name="feature_savings_update_request_failed_message">فشل تقديم الطلب لتحديث تفاصيل الحساب. يرجى المحاولة مرة أخرى</string>
+    <string name="feature_savings_update_request_try_again">حاول مرة أخرى</string>
+
+    <!--    Withdraw savings account-->
+    <string name="feature_savings_withdraw_account_topbar_title">حساب السحب</string>
+    <string name="feature_savings_withdraw_remarks_label">ملاحظات</string>
+    <string name="feature_savings_withdraw_request_withdraw">طلب تحديث</string>
+    <string name="feature_savings_withdraw_request_successful">تم تقديم الطلب بنجاح</string>
+    <string name="feature_savings_withdraw_request_successful_message">تم تقديم الطلب لسحب الحساب بنجاح</string>
+    <string name="feature_savings_withdraw_request_failed">فشل تقديم الطلب</string>
+    <string name="feature_savings_withdraw_request_failed_message">فشل طلب سحب الحساب. يرجى المحاولة مرة أخرى</string>
+
+    <string name="feature_savings_no_accounts_found">لم يتم العثور على حسابات توفير</string>
+        <string name="feature_generic_error_server">هناك مشكلة في الخادم من جانبنا، لا يمكننا المتابعة، يرجى المحاولة مرة أخرى بعد لحظة</string>
 </resources>

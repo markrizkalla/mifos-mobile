@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<resources>
+    <!-- Error messages -->
+    <string name="feature_tpt_error_amount_required">المبلغ مطلوب</string>
+    <string name="feature_tpt_error_amount_invalid">الرجاء إدخال مبلغ صالح</string>
+    <string name="feature_tpt_error_remarks_empty">لا يمكن أن تكون الملاحظات فارغة</string>
+    <string name="feature_tpt_error_remarks_invalid">تم إدخال ملاحظات غير صالحة</string>
+    <string name="feature_tpt_error_server">هناك مشكلة في الخادم من جانبنا، لا يمكننا المتابعة، يرجى المحاولة مرة أخرى بعد لحظة</string>
+    <string name="feature_tpt_error_amount_exceeds_balance">المبلغ يتجاوز الرصيد المتاح</string>
+
+    <!-- Labels -->
+    <string name="feature_tpt_label_origin_account">حساب المصدر</string>
+    <string name="feature_tpt_label_origin_account_hint">اختر حساب دفع آخر</string>
+    <string name="feature_tpt_label_destination">حساب الوجهة</string>
+    <string name="feature_tpt_label_amount">المبلغ</string>
+    <string name="feature_tpt_label_remarks">ملاحظات</string>
+    <string name="feature_tpt_tip">هل لا تجد حساب الوجهة؟</string>
+    <string name="feature_tpt_tip_action">إضافة مستفيد!</string>
+    <!-- Button texts -->
+    <string name="feature_tpt_transfer_button">تحويل المبلغ</string>
+
+</resources>
