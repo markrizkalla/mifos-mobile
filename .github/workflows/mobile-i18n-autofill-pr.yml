@@ -55,18 +55,17 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: |
           python translate.py \
-            --repo-root  feature/transfer-process \
             --mode apply \
-            --locales ar \
+            --locales ar,de,en,es,fr,gu,hi,hu,in,kn,ml,mr,pt,si,sw,bn,km,my,pl,ru,sw,te,ur \
             --model gemma-3-27b-it \
             --batch-size 15 \
             --request-delay 2
 
       # Fast validation – matches existing CI expectations
-#      - name: Validate Android resources compile
-#        run: |
-#          ./gradlew \
-#            :cmp-android:processDemoDebugResources
+      - name: Validate Android resources compile
+        run: |
+          ./gradlew \
+            :cmp-android:processDemoDebugResources
           
 
       - name: Create Pull Request with translations
