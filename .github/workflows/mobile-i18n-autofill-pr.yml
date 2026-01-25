@@ -71,14 +71,14 @@ jobs:
       - name: Check for changes
         id: check_changes
         run: |
-          # Check if there are any translation changes
-          if git diff --quiet HEAD -- 'cmp-android/**' 'feature/**' 'core/**' 'cmp-shared/**' 'cmp-navigation/**' 'libs/**'; then
-            echo "has_changes=false" >> $GITHUB_OUTPUT
-            echo "No translation changes detected"
-          else
+          # Check if there are any changes in cmp-android or feature
+          if git status --porcelain cmp-android/ feature/ | grep -q .; then
             echo "has_changes=true" >> $GITHUB_OUTPUT
-            echo "Translation changes detected"
-            git diff --stat HEAD -- 'cmp-android/**' 'feature/**' 'core/**' 'cmp-shared/**' 'cmp-navigation/**' 'libs/**'
+            echo "Changes detected:"
+            git status --short cmp-android/ feature/
+          else
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+            echo "No changes detected"
           fi
 
       - name: Create or update PR with translations
@@ -93,8 +93,8 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           
-          # Stage translation changes
-          git add cmp-android/ feature/ core/ cmp-shared/ cmp-navigation/ libs/ || true
+          # Stage only cmp-android and feature changes
+          git add cmp-android/ feature/
           
           # Check if there are staged changes
           if git diff --cached --quiet; then
