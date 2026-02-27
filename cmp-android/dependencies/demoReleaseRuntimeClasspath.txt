@@ -76,10 +76,6 @@ androidx.core:core:1.16.0
 androidx.cursoradapter:cursoradapter:1.0.0
 androidx.customview:customview-poolingcontainer:1.0.0
 androidx.customview:customview:1.1.0
-androidx.databinding:databinding-adapters:8.10.0
-androidx.databinding:databinding-common:8.10.0
-androidx.databinding:databinding-ktx:8.10.0
-androidx.databinding:databinding-runtime:8.10.0
 androidx.databinding:viewbinding:8.10.0
 androidx.datastore:datastore-core:1.0.0
 androidx.datastore:datastore-preferences-core:1.0.0
@@ -108,7 +104,6 @@ androidx.lifecycle:lifecycle-runtime-compose:2.9.2
 androidx.lifecycle:lifecycle-runtime-ktx-android:2.9.2
 androidx.lifecycle:lifecycle-runtime-ktx:2.9.2
 androidx.lifecycle:lifecycle-runtime:2.9.2
-androidx.lifecycle:lifecycle-service:2.9.2
 androidx.lifecycle:lifecycle-viewmodel-android:2.9.2
 androidx.lifecycle:lifecycle-viewmodel-compose-android:2.9.2
 androidx.lifecycle:lifecycle-viewmodel-compose:2.9.2
